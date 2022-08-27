@@ -1,8 +1,9 @@
-# Pry::Usable
+# Pry meets Usable
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pry/usable`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem joins usable and pry together, and automatically adds some methods to your console.
 
-TODO: Delete this and the text above, and describe your gem
+The main interface is the `conf` method, which is basically an open struct backed by a file. It's used to store
+commonly accessed records, resources and other values across console sessions.
 
 ## Installation
 
@@ -22,7 +23,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You're ready to go! Time to set some values from the console. Open up your rails console (or if you don't have
+a rails app, you can use `bin/console` from this app instead, as an example):
+```ruby
+conf.me = "Ryan"
+```
+
+Then close the console, and reopen it. Now it can be accessed via `me` for short, and is set to your value:
+```ruby
+me
+```
+
+The methods are defined on the top level binding, and should be available throughout your session.
+
+Use `conf` to set them. Then afterwards, you don't need to reference `conf` anymore.
 
 ## Development
 
