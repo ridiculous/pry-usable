@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/pry/usable/version"
+require_relative "lib/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "pry-usable"
-  spec.version       = Pry::Usable::VERSION
+  spec.version       = PryUsable::VERSION
   spec.authors       = ["Ryan Buckley"]
   spec.email         = ["ridiculous@hey.com"]
 
