@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pry-usable (0.1.0)
+    pry-usable (1.0.0)
       pry
       usable (>= 3)
 
