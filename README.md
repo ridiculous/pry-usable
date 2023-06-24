@@ -1,4 +1,4 @@
-# Pry meets Usable
+# Pry meets Usable [![Gem Version](https://badge.fury.io/rb/pry-usable.svg)](https://badge.fury.io/rb/pry-usable)
 
 This gem joins usable and pry together, and automatically adds some methods to your console.
 
